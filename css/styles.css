@@ -1,0 +1,298 @@
+@charset "UTF-8";
+
+/* ------------------------------------------
+  RESET
+--------------------------------------------- */
+
+body, div,
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, dl, dt, dd, ol, ul, li, hr,
+fieldset, form, label, legend, th, td,
+article, aside, figure, footer, header, hgroup, menu, nav, section,
+summary, hgroup {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+a:active,
+a:hover {
+  outline: 0;
+}
+
+@-webkit-viewport { width: device-width; }
+@-moz-viewport { width: device-width; }
+@-ms-viewport { width: device-width; }
+@-o-viewport { width: device-width; }
+@viewport { width: device-width; }
+
+
+/* ------------------------------------------
+  BASE DEMO STYLES
+--------------------------------------------- */
+
+body {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  color: #37302a;
+  background: #fff;
+  min-height: 5000px;
+  font: normal 100%/1.4 sans-serif;
+}
+
+section {
+  border-bottom: 1px solid #999;
+  float: left;
+  width: 100%;
+  height: 800px;
+}
+
+
+/* ------------------------------------------
+  NAVIGATION STYLES
+  (+ responsive-nav.css file is loaded in the <head>)
+--------------------------------------------- */
+
+.fixed {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.nav-collapse,
+.nav-collapse * {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.nav-collapse,
+.nav-collapse ul {
+  list-style: none;
+  width: 100%;
+  float: left;
+}
+
+.nav-collapse li {
+  float: left;
+  width: 100%;
+}
+
+@media screen and (min-width: 40em) {
+  .nav-collapse li {
+    width: 25%;
+    *width: 24.9%; /* IE7 Hack */
+    _width: 19%; /* IE6 Hack */
+  }
+}
+
+.nav-collapse a {
+  color: #E296B4;
+  text-decoration: none;
+  width: 100%;
+  background: #FAE1EB;
+  border-bottom: 1px solid white;
+  padding: 0.3em 1em;
+  float: left;
+}
+
+@media screen and (min-width: 40em) {
+  .nav-collapse a {
+    margin: 0;
+    /*padding: 1em;*/
+    float: left;
+    text-align: center;
+    border-bottom: 0;
+    border-right: 1px solid white;
+  }
+}
+
+.nav-collapse ul ul a {
+  background: #ca3716;
+  padding-left: 2em;
+}
+
+@media screen and (min-width: 40em) {
+  .nav-collapse ul ul a {
+    display: none;
+  }
+}
+/* ------------------------------------------
+    INTRO
+---------------------------------------------*/
+
+/*--------------------------------------------*/
+
+.introduction {
+    background-image: url('../img/floral2.png');
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    /*background-size: cover;*/
+    background-position-y: -280px; 
+    max-width: 800px;
+    height: 35rem;
+    overflow: auto;
+    overflow-x: auto;
+    overflow-y: auto;
+    margin: 0px auto;
+}
+.bkgd-black {
+    width: 100%;
+    height: 35rem;
+    background-color: rgb(28, 27, 39);
+}
+.position {
+    position: relative;
+    width: 100%;
+    background-size: cover;
+    height: auto;
+    padding-top: 13.5em;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.double-border {
+    border: 4px double #ffffff;
+    height: 100%;
+    position: relative;  
+}
+.outer-box .double-border {
+    padding: 1em 0.4em;
+}
+.outer-box {
+    /*padding: 1em 0.4em;*/
+    position: relative;
+    z-index: 10;
+    padding: .5em;
+    max-width: 480px;
+    width: 85%;
+    margin: 0px auto;
+    background: rgba(241, 241, 241, .9);
+    text-align: center;
+    font-family: CenturyModernFSLight;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-delay: 3s;
+}
+.introduction > .content {
+  color: #8C8181;
+  font-family: 'Droid Sans', sans-serif;
+  font-size: 1.25em;
+  font-style: normal;
+  font-weight: normal;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5em;
+    /*font-family: CenturyModernFSLight;*/
+}
+.position .outer-box .double-border > h1,
+.position .outer-box .double-border > h3 {
+    text-align: center;
+    color: #8C8181;
+    text-transform: uppercase;
+    font-family: 'Droid Sans', sans-serif;
+}
+.position .outer-box .double-border > h1 {
+    color: #8C8181;
+    font-weight: normal;
+    margin-left: none;
+    margin-bottom: -.8rem;
+    font-size: 2rem;
+    font-family: 'Droid Sans', sans-serif;
+    padding-top: 5px;
+}
+.position .outer-box .double-border > h3 {
+    font-weight: normal;
+    margin-top: none;
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    padding-top: 5px;
+    margin-bottom: 5px;
+}
+.category-pg-title > .double-border {
+    padding: 1em 0.4em;
+}
+#about-me {
+    font-family: 'Droid Sans', sans-serif;
+    display: block;
+    background-color: #FAE1EB;
+    height: 27rem
+}
+#about-me .content { 
+    font-weight: normal;
+    text-align: center;
+    max-width: 40rem;
+    min-width: 20rem;
+    color: rgb(47,45,45);
+    padding-top: 1rem;
+    margin: 0 auto;
+}
+#about-me > .content h1 {
+    margin-top: 0rem;
+    height: 2.3rem;
+    margin: 1rem 0rem;
+    padding-top: none;
+    font-size: 3.125rem;
+}
+#about-me .content > h3 {
+   font-size: 1.563rem;
+}
+
+/* ------------------------------------------
+  NAV TOGGLE STYLES
+--------------------------------------------- */
+
+@font-face {
+  font-family: "responsivenav";
+  src:url("icons/responsivenav.eot");
+  src:url("icons/responsivenav.eot?#iefix") format("embedded-opentype"),
+    url("icons/responsivenav.ttf") format("truetype"),
+    url("icons/responsivenav.woff") format("woff"),
+    url("icons/responsivenav.svg#responsivenav") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.nav-toggle {
+  position: fixed;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  text-decoration: none;
+  text-indent: -999px;
+  position: relative;
+  overflow: hidden;
+  width: 70px;
+  height: 45px;
+  float: right;
+}
+
+.nav-toggle:before {
+  color: #E296B4; /* Edit this to change the icon color */
+  font-family: "responsivenav", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  font-size: 60px;
+  text-transform: none;
+  position: absolute;
+  content: "≡";
+  text-indent: 0;
+  text-align: center;
+  line-height: 36px;
+  speak: none;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.nav-toggle.active::before {
+  font-size: 32px;
+  content:"x";
+}
